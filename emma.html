@@ -1,0 +1,159 @@
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset pink;
+  background-color: lightgreen;
+  text-align: center;
+}
+.img-container {
+        text-align: center;
+      }
+#button{
+ background-color: black;
+ color: pink;
+ font-size: 20px;
+ padding:7px;
+}
+#reset{
+ background-color: black;
+ color: pink;
+ font-size: 16px;
+ padding:5px;
+}
+</style>
+<title>HTML img Tag</title>
+<script type="text/javascript">
+	function handleClick() {
+  var amountCorrect = 0;
+  for (var i = 1; i <= 45; i++) {
+    var radios = document.getElementsByName('question' + i);
+    for (var j = 0; j < radios.length; j++) {
+      var radio = radios[j];
+      if (radio.value === "correct" && radio.checked) {
+        amountCorrect++;
+      }
+    }
+  }
+  alert("Score: " + amountCorrect);
+}
+
+</script>
+</head>
+<body  style="background-color:lightpink;">
+
+
+<div class="myDiv">
+  <h1 style="color:red; font-family:Papyrus; font-style:Italic">How Well Do You Know Friends?</h1>
+  <p>Are you the number one friends' fan?Test your knowledge with this quiz.</p>
+</div>
+<br>
+ <div class="img-container"> <!-- Block parent element -->
+      
+      <img src="C:\Users\KJ\Desktop\download.jpg" alt="Simply Easy Learning" width="500"
+         height="300">
+ </div>
+<br>
+<p><b>To listen to the friends theme song Click here <a href="https://www.youtube.com/watch?v=2VbODnX0dVs">Friends the song</a></b></p>
+<br>
+
+<form>Name:<input type="text"name="Name"/>
+<br>
+<br>
+Country:<input type="text"name="Country"/>
+<br>
+<br>
+</form>
+<br>
+<br>
+<form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
+
+<table border="2"><b>
+<tr>
+<td>Quiz</td>
+<td>Tick your answer</td>
+</tr>
+<tr>
+<td><p>1.In which year did friends premiere?</p></td>
+<td><ul><b><input id="answer" type="radio"  name="question1"  value="wrong"> 1986<br>
+<input id="answer" type="radio" name="question1" value="wrong"> 1988<br>
+<input id="answer" type="radio" name="question1" value="correct"> 1994<br>
+<input id="answer" type="radio" name="question1" value="wrong"> 1996</ul></b></td>
+</tr>
+<tr>
+<td><p>2.What is the value of Joey's toy penguin?<p/></td>
+<td><ul><b><input id="answer" type="radio" name="question2" value="correct"> Huggsy<br>
+<input id="answer" type="radio" name="question2" value="wrong"> Tribbiani<br>
+<input id="answer" type="radio" name="question2" value="wrong"> Doggy<br>
+<input id="answer" type="radio" name="question2" value="wrong"> Matt</ul></b></td>
+</tr>
+<tr>
+<td><p>3.Who says "sometimes i wish i was a lesbian"?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question3" value="wrong" > Ross<br>
+<input id="answer" type="radio" name="question3" value="wrong"> Rachel<br>
+<input id="answer" type="radio" name="question3" value="wrong"> Phoebe<br>
+<input id="answer" type="radio" name="question3" value="correct"> Chandler</ul></b></td>
+</tr>
+<tr>
+<td><p>4.What was phoebes signature song?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question4" value="correct" > Smelly cat<br>
+<input id="answer" type="radio" name="question4" value="wrong"> Sticky Shoes<br>
+<input id="answer" type="radio" name="question4" value="wrong"> LIttle Black Curly Hair<br>
+<input id="answer" type="radio" name="question4" value="wrong"> Two of them kissed last night</ul></b></td>
+</tr>
+<tr>
+<td><p>5.What was the value of Rachel and Ross's child?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question5" value="wrong" > Ben geller-green<br>
+<input id="answer" type="radio" name="question5" value="wrong"> Ross geller jnr<br>
+<input id="answer" type="radio" name="question5" value="correct"> Emma geller-green<br>
+<input id="answer" type="radio" name="question5" value="wrong"> Erica geller-green</ul></b></td>
+</tr>
+<tr>
+<td><p>6.What did phoebe steal from Ross?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question6" value="wrong"> Arm chair<br>
+<input id="answer" type="radio" name="question6" value="wrong"> dinosaur<br>
+<input id="answer" type="radio" name="question6" value="correct"> comic book<br>
+<input id="answer" type="radio"name="question6"  value="wrong"> toy dinosaur</ul></b></td>
+</tr>
+<tr>
+<td><p>7.What part of new york do the 'Friends' live in?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question7" value="correct"> 90 Bedford St<br>
+<input id="answer" type="radio" name="question7" value="wrong"> Rockefeller center<br>
+<input id="answer" type="radio" name="question7" value="wrong"> Greenwich Village<br>
+<input id="answer" type="radio" name="question7" value="wrong"> Central perk</ul></b></td>
+</tr>
+<tr>
+<td><p>8.How many seasons did the series have?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question8" value="wrong"> 7<br>
+<input id="answer" type="radio" name="question8" value="correct"> 10<br>
+<input id="answer" type="radio" name="question8" value="wrong"> 12<br>
+<input id="answer" type="radio" name="question8" value="wrong"> 7.1</ul></b></td>
+</tr>
+<tr>
+<td><p>9.Chandler and Monica became an item in season 4 after spending the night together in which city?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question9" value="wrong"> New York<br>
+<input id="answer" type="radio" name="question9" value="correct" > London<br>
+<input id="answer" type="radio" name="question9" value="wrong"> Rome<br>
+<input id="answer" type="radio" name="question9" value="wrong"> Chicago</ul></b></td>
+</tr>
+<tr>
+<td><p>10.What is the value of Rachel's ex who has the same sweater as ross,causing confusion as to the identity of the father of Rachel's baby?</p></td>
+<td><ul><b><input id="answer" type="radio" name="question10" value="wrong"> Paul stevens<br>
+<input id="answer" type="radio" name="question10" value="correct"> Tag<br>
+<input id="answer" type="radio" name="question10" value="wrong"> Mark<br>
+<input id="answer" type="radio" name="question10" value="wrong"> Barry</ul></b></td>
+</tr>
+</b></table border="2">
+<br>
+
+<div class="img-container"> <!-- Block parent element --><b>
+<button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+<p><input type="reset" value="Restart"></p>
+</div>
+
+
+
+</form>
+</body>
+</html>
+
